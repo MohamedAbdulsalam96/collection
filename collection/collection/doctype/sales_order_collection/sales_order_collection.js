@@ -6,14 +6,14 @@ frappe.ui.form.on('Sales Order Collection', {
 
 	// }
 });
-frappe.ui.form.on('Sales Order Items', {
+frappe.ui.form.on('Sales Invoice Items', {
 	planned_amount: function(frm) {
 		frappe.call({
 			method:"total_order_amount",
 			doc:frm.doc,
 			callback:function(r){
 				if(r.message){
-					frm.refresh_field("total_order_amt")
+					frm.refresh_fields("total_order_amt")
 				}
 
 			}
