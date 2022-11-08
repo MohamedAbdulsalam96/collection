@@ -19,19 +19,25 @@
   {
    "fieldname": "customer",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Customer",
-   "options": "Customer"
+   "options": "Customer",
+   "reqd": 1
   },
   {
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "receipt_amount",
    "fieldtype": "Currency",
-   "label": "Receipt Amount"
+   "in_list_view": 1,
+   "label": "Receipt Amount",
+   "reqd": 1
   },
   {
    "fieldname": "remark",
@@ -42,7 +48,8 @@
    "fieldname": "receipt_collection_details",
    "fieldtype": "Table",
    "label": "Receipt Collection Details",
-   "options": "Receipt Collection Details"
+   "options": "Receipt Collection Details",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_2",
@@ -59,7 +66,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-11-07 17:07:07.911165",
+ "modified": "2022-11-08 16:32:48.590036",
  "modified_by": "Administrator",
  "module": "collection",
  "name": "Collection Receipt",

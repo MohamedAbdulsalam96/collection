@@ -13,12 +13,12 @@ class SalesOrderCollection(Document):
 		self.total_order_amt=sum(amt)
 		return True
             
-	def validate(self):
-		self.validate_customer()
+	# def validate(self):
+	# 	self.validate_customer()
     
-	def validate_customer(self):
-		cust=frappe.get_all("Sales Order Collection",["customer"])
-		if cust:
-			for i in cust:
-				if self.customer==i.get("customer"):
-					frappe.throw("Sales Order Collection Already Exist For Customer {0}".format(self.customer))
+	# def validate_customer(self):
+	# 	cust=frappe.get_all("Sales Order Collection",["order_no"])
+	# 	if cust:
+	# 		for i in cust:
+	# 			if self.order_no==i.get("order_no"):
+	# 				frappe.throw("Sales Order Collection Already Exist against Order no {0}".format(self.order_no))

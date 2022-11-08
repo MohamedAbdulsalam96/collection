@@ -9,6 +9,7 @@
   "invoice_no",
   "invoice_date",
   "planned_amount",
+  "upto_received",
   "amount",
   "status",
   "remark"
@@ -52,12 +53,18 @@
    "in_list_view": 1,
    "label": "Planned Amount",
    "read_only": 1
+  },
+  {
+   "fieldname": "upto_received",
+   "fieldtype": "Currency",
+   "label": "Upto Received",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-11-07 17:09:10.155831",
+ "modified": "2022-11-08 17:16:20.477920",
  "modified_by": "Administrator",
  "module": "collection",
  "name": "Receipt Collection Details",

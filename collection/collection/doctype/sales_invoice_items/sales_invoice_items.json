@@ -14,7 +14,8 @@
   "planned_amount",
   "rec_amount",
   "status",
-  "unit"
+  "unit",
+  "rec_det"
  ],
  "fields": [
   {
@@ -40,7 +41,8 @@
   {
    "fieldname": "bill_no",
    "fieldtype": "Data",
-   "label": "Bill No"
+   "label": "Bill No",
+   "unique": 1
   },
   {
    "fieldname": "rec_date",
@@ -70,12 +72,18 @@
    "fieldtype": "Select",
    "label": "Unit",
    "options": "Qty\nPcs"
+  },
+  {
+   "fieldname": "rec_det",
+   "fieldtype": "Small Text",
+   "label": "Rec det",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-11-07 16:51:33.133323",
+ "modified": "2022-11-08 17:29:05.118711",
  "modified_by": "Administrator",
  "module": "collection",
  "name": "Sales Invoice Items",
